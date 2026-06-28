@@ -1,0 +1,2617 @@
+fileFormatVersion: 2
+guid: 52a4a66a6bb75c04e9a53e1c802e71eb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kakashi_Idle1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 11398
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c8fd9444500614a96018c68469982b
+      internalID: -104625237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Idle2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 11398
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbacec900335bb4dbb0b934b71dcd71
+      internalID: -1458979839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Idle3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 11398
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c019cb2e344d947b3eab1dc2ea376e
+      internalID: 998564825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Idle4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 11398
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f62a0c96d93e649a244ae697d07876
+      internalID: 982328295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Walk1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 11311
+        width: 34
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96d873b493ec1e43b6beb7435019e84
+      internalID: -2093524612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Walk2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 11311
+        width: 34
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43840700542d848488943aa753cd04c1
+      internalID: 1137392532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Walk3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 11311
+        width: 34
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0cc9dbc4e4e054180e11c2f434cc47
+      internalID: -466051443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Walk4
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 11310
+        width: 34
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304ea1b3f8f83ea41967b1799ecc4487
+      internalID: -742699860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Walk5
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 11310
+        width: 34
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754d1e46c5b49184dbccf54f2547ffa6
+      internalID: -34423124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Walk6
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 11310
+        width: 34
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d5590c68f595a469e60504f5bdf4d1
+      internalID: -495553144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Run1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 11234
+        width: 75
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cdf639bc56aeb48b7a022e65d6b863
+      internalID: 601945345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Run2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 11235
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0743e8f638d904b8ad78d9ea09d496
+      internalID: -1956394722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Run3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 11235
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b549ab3ed8d984d97caa971c6bd272
+      internalID: -1405242181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Run4
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 11233
+        width: 75
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f81d00bca3b3b142affba2eb4fdf67d
+      internalID: -359580343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Run5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 11232
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab009fe4926b404d9b09eaab9e1206b
+      internalID: -1352681979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Run6
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 11234
+        width: 75
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaef5ba6c1452d4c88c866e1f881e2d
+      internalID: -2037050281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9026314babeee04b9c2c94963682749
+      internalID: -1168600507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7357b3cfc10d7469b95691316187c6
+      internalID: 953599945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fb44b8506981e4d9b4ac67292d7baa
+      internalID: -1880135822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35658ef31900754498dc310ff0ce5db
+      internalID: -321427657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9d32edef4a1534f8efeb7f0888e7c7
+      internalID: -1571613998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8eeaa2a5cc59047b1628efc1f35303
+      internalID: -1762307313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart7
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6768b0f9e11cc1a4884de2331cff7d3a
+      internalID: -1208307703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart8
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ede24684f4515e4eb6be1e177ec17ba
+      internalID: -992560940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3095f9fd07c6daf43acccd3d32cff8fb
+      internalID: 895290379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96724ab74c0bedb4f8f1fcdd5509caaf
+      internalID: -1028849153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart11
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2265
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101624e44f1c4174ca4541c87f34630c
+      internalID: 978619394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeStart12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2195
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982d6bbc93efded4e949e5873dd2fdd0
+      internalID: -305594743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2110
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a1ddfe708716a4f9a7ce04e64b0209
+      internalID: -1778341489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2110
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd4b6fa269a1ea46b7cf7e3b0bdb2ea
+      internalID: 525892076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2110
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb45428ccfb64a45929f01ff2c90031
+      internalID: -106125520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 2110
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f48f609a811cf74183a578d80d2b09b
+      internalID: -1461179628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare5
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2110
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537d71bfa8b39f84c942a491becb5a19
+      internalID: 1027855468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 2110
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1de88595d6a61a4f8aa741a65f6b6d5
+      internalID: 1729043905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare7
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2110
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aad817f7fae66f4daaabf5478db4c9b
+      internalID: 1408041551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2037
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e6cc52323a1384a9ba192d15efd204
+      internalID: 1478870591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladePrepare9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2037
+        width: 79
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1875e4b39f7cf4794806852ba11047
+      internalID: 1674704036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1948
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461c7cf71cde0c4458ccdd3ba5fbaa36
+      internalID: -157459298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1948
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d6d1058072d4042aaaa37104723b9d
+      internalID: -315256358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1948
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9be006b6dee09241b6c456e7aee2903
+      internalID: 1706631181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1949
+        width: 101
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6952d6df999199f44acce8e1573f7f2d
+      internalID: 817582470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging5
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1948
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f17b0120c1d8904687f7380b4783117
+      internalID: 469263989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1871
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e757e3f147ef9c48b4f6d91c4c43c7d
+      internalID: -1104456370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1871
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb88748d4c349f468ef49f1f10bc401
+      internalID: -2078134640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1871
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fefff928ef95e54b816135f0462724f
+      internalID: 418450106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging9
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1871
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b01a277cbc1fc4bae5c3d40768f4b2
+      internalID: -1693333242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeCharging10
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1871
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8717d4032c28fd479ad6c1c75ba76df
+      internalID: -1429561352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1798
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7220e0c42a4e2f4ebbb2beff917384a
+      internalID: -1658687775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1798
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b61b940d0ee25478b9e4d55910c1a1
+      internalID: -552955118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1798
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ece620fb5fbf1469f2197f2f8d0463
+      internalID: 137285542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit4
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1798
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800ea10a590b4614095bda22366f02c4
+      internalID: 1682977494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit5
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1798
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c641e69be7e21d4aac80a3ed71c4b9e
+      internalID: -1309425783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1737
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8851d6f2122b14748b8d28ca799857da
+      internalID: -2141013570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit7
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1737
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7396331d1a15747aab12ed0b56d201
+      internalID: -1086417966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1737
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379979c27b55dd542ad5a870b45fdf64
+      internalID: 1774166417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit9
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1737
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed35b09f2855c7b4eacf9de69e372371
+      internalID: -1601611909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit10
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1737
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7392bc07f4a65474aa82b3b4a74ef6aa
+      internalID: -804573316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LightningBladeAttackInit11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1676
+        width: 109
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb68560c81b4e445a4dcbceafe376b4
+      internalID: -259428914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1594
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d21613a5b20b2c4ca6cc2ca0f5c09e6
+      internalID: 47833111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_12
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1594
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a3ae9fe6b7f314a9829d4115b328dd
+      internalID: 800412967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1524
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac538986654f3d4195cfbf9375f3ad1
+      internalID: -459043457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_14
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1524
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514bb14f989ab93488a00df0f33659df
+      internalID: 202508239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1454
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dca19982e2d87345827ce03657297a8
+      internalID: 1903470549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_16
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1454
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fd8480137088e428b89c4f613829aa
+      internalID: 1127746503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1384
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbcbd9a18b67e94c8051afac088b350
+      internalID: 1093447253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_18
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1384
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a173760cd04298e4285e5474e7687540
+      internalID: 221324643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1314
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dbbab7fe1a1614f84dbbf4cefc23c1
+      internalID: 375512610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_20
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1314
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869e8d48b2097a740a38d90de95cc6eb
+      internalID: 805991909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1244
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffa85f56f2cfe14a921778d4aaf119d
+      internalID: 1782732180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1244
+        width: 274
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9308abc95e86f594ab3cda101fb70f9d
+      internalID: -237850365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1174
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e393959473ab074180fbb5ab8458b2b
+      internalID: 1617758097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_24
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1174
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea066b356d85a294ebd6aec3ac6570d0
+      internalID: 616957036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1104
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac9c0b75c82b7940a3a7c08f19fd6c7
+      internalID: 1777126674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_26
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1104
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705b646c83b52da4ab7756c2360eeb82
+      internalID: 1757614202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1034
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43405844b1680f34fba2c852584399ec
+      internalID: -552594023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_28
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1034
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae26e52ac144d0344b5a89b6479620ac
+      internalID: 223933022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 964
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0dcf047a58a5f4bbb18f98a3a037c6
+      internalID: -145151976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_30
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 964
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f37666dc7d421b4d8d51767162a10c5
+      internalID: 2028543652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 894
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0277c11c9eaed4d89a262295b088a0
+      internalID: 1914239184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_32
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 894
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5511bfd3f729be43ab01b84d49dcd7c
+      internalID: 578886715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_33
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 824
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b8270bd0d5ce64fa2b78e2374dba53
+      internalID: -858502504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_34
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 824
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b7a90d376c7c24baf576b362bc0236
+      internalID: 436162827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 754
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf71e5d5a8ffddd499c22dc1177b14dc
+      internalID: 744697562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_36
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 754
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f2f976b87806e47bd1b42ccff43537
+      internalID: 402274737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_37
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 684
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faea99fdf41dc6e4ea2f0ddf72e9eab2
+      internalID: 349088333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_38
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 684
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe66994f59362942914bccd7177da19
+      internalID: 62083127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 614
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96795b633349f9b4581b08e4d0cc5dd2
+      internalID: -1026034014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_40
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 614
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfef57bb8a90c8844b574d0704c91664
+      internalID: 533566133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_41
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 544
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd82c13bf094b24d8b66e5e9d77c5a7
+      internalID: -929054831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_42
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 544
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ed21adcfa71264483e82b3d161d1d7
+      internalID: -2067762253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_43
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 474
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da08f74ce7551204d956f4c4b3ab8403
+      internalID: -557726491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_44
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 474
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a1bef6358c181459dad85d64a88795
+      internalID: 643025281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 404
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f20f4bd9d7206f4e8f857aa05ec9537
+      internalID: 177987279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_46
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 404
+        width: 274
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ce14300e3047b4ba6f3976b9a91cd9
+      internalID: -1864240435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Jump1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 11009
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8621a5094e10645bdad217624d84d7
+      internalID: -755079294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Jump2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 11009
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf704da3d081374593f838cbf98c08e
+      internalID: -783640191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Fall1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 10930
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1263e9037a1e5f7408e2a83c6912154e
+      internalID: -1955098612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Fall2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 10930
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addae9d008ba2734a91a0cf9f091b163
+      internalID: 1116295743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Block
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 11095
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e36ab8544131d741b52eb7106050b83
+      internalID: -1162948311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo1-1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 10537
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6653e0f44f2f0f84ab139a2ddfb6eeca
+      internalID: -1158185611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo1-2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 10537
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e898903935d65544829d19f82b46d7e
+      internalID: -616073880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo1-3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 10537
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955489091ae54634a96745336fd40d48
+      internalID: 1848895872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo1-4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 10537
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0ca26647c409d498fd7a474cdf4d9b
+      internalID: -612321190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo2-1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 10458
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f81305b3b9939b4a8be9eb54897aeb1
+      internalID: -1244822482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo2-2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 10458
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d17e5015b34c264d80aeda35c68ae6a
+      internalID: 451383093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo2-3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 10458
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32e7adb504673748a6009d6d0e69873
+      internalID: 1718109817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo2-4
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 10458
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df4d4623a95a8c448bc0b146cfd5b62
+      internalID: -1007104975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kakashi_Combo2-5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 10458
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4922f21d37199d6438c52b4772f0c205
+      internalID: 799910095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 10379
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9833a1a03f01f3341a399a28aa087d2e
+      internalID: 226665865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_10
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 10379
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f85ee05029af934f89819806436f0d7
+      internalID: -1352034574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_47
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 10379
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507ff43e487d3b54592c06f2278ea618
+      internalID: 1960104950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_48
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 10379
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a55afa2fa3b45e45a069dacc2458603
+      internalID: 634472347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_10: -1352034574
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_11: 800412967
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_12: -459043457
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_13: 202508239
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_14: 1903470549
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_15: 1127746503
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_16: 1093447253
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_17: 221324643
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_18: 375512610
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_19: 137285542
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_20: 1782732180
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_21: -237850365
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_22: 1617758097
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_23: 616957036
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_24: 1777126674
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_25: 1757614202
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_26: -552594023
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_27: 223933022
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_28: -145151976
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_29: 1682977494
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_30: 1914239184
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_31: 578886715
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_32: -858502504
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_33: 436162827
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_34: 744697562
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_35: 402274737
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_36: 349088333
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_37: 62083127
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_38: -1026034014
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_39: -1309425783
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_40: -929054831
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_41: -2067762253
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_42: -557726491
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_43: 643025281
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_44: 177987279
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_45: -1864240435
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_46: -2141013570
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_47: 1960104950
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_48: 634472347
+      DS DSi - Naruto Shippuden Ninja Council 3 - Kakashi Hatake Transparent_9: 226665865
+      Kakashi_Block: -1162948311
+      Kakashi_Combo1-1: -1158185611
+      Kakashi_Combo1-2: -616073880
+      Kakashi_Combo1-3: 1848895872
+      Kakashi_Combo1-4: -612321190
+      Kakashi_Combo2-1: -1244822482
+      Kakashi_Combo2-2: 451383093
+      Kakashi_Combo2-3: 1718109817
+      Kakashi_Combo2-4: -1007104975
+      Kakashi_Combo2-5: 799910095
+      Kakashi_Fall1: -1955098612
+      Kakashi_Fall2: 1116295743
+      Kakashi_Idle1: -1458979839
+      Kakashi_Idle2: 998564825
+      Kakashi_Idle3: 982328295
+      Kakashi_Idle4: 601945345
+      Kakashi_Jump1: -755079294
+      Kakashi_Jump2: -783640191
+      Kakashi_Run1: -1956394722
+      Kakashi_Run2: -1405242181
+      Kakashi_Run3: -359580343
+      Kakashi_Run4: -1352681979
+      Kakashi_Run5: -2037050281
+      Kakashi_Run6: -2093524612
+      Kakashi_Walk1: 1137392532
+      Kakashi_Walk2: -466051443
+      Kakashi_Walk3: -742699860
+      Kakashi_Walk4: -34423124
+      Kakashi_Walk5: -495553144
+      Kakashi_Walk6: -157459298
+      LightningBladeAttackInit1: -1658687775
+      LightningBladeAttackInit10: -804573316
+      LightningBladeAttackInit11: -259428914
+      LightningBladeAttackInit2: -552955118
+      LightningBladeAttackInit3: 137285542
+      LightningBladeAttackInit4: 1682977494
+      LightningBladeAttackInit5: -1309425783
+      LightningBladeAttackInit6: -2141013570
+      LightningBladeAttackInit7: -1086417966
+      LightningBladeAttackInit8: 1774166417
+      LightningBladeAttackInit9: -1601611909
+      LightningBladeCharging1: -1429561352
+      LightningBladeCharging10: -315256358
+      LightningBladeCharging2: 1706631181
+      LightningBladeCharging3: 817582470
+      LightningBladeCharging4: 469263989
+      LightningBladeCharging5: -1104456370
+      LightningBladeCharging6: -2078134640
+      LightningBladeCharging7: 418450106
+      LightningBladeCharging8: -1693333242
+      LightningBladeCharging9: -1778341489
+      LightningBladePrepare1: 525892076
+      LightningBladePrepare2: -106125520
+      LightningBladePrepare3: -1461179628
+      LightningBladePrepare4: 1027855468
+      LightningBladePrepare5: 1729043905
+      LightningBladePrepare6: 1408041551
+      LightningBladePrepare7: 1478870591
+      LightningBladePrepare8: 1674704036
+      LightningBladePrepare9: -1168600507
+      LightningBladeStart1: -1028849153
+      LightningBladeStart10: 978619394
+      LightningBladeStart11: -305594743
+      LightningBladeStart12: 953599945
+      LightningBladeStart2: -1880135822
+      LightningBladeStart3: -321427657
+      LightningBladeStart4: -1571613998
+      LightningBladeStart5: -1762307313
+      LightningBladeStart6: -1208307703
+      LightningBladeStart7: -992560940
+      LightningBladeStart8: 895290379
+      LightningBladeStart9: -1658687775
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
