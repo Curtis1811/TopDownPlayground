@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "PlayerInputAction",
     "maps": [
         {
@@ -27,7 +28,7 @@
                     "name": "JutsuOne",
                     "type": "Button",
                     "id": "a77f502f-3eaf-479d-9e82-9096966e4aa1",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false

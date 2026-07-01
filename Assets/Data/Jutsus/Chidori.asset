@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Chidori
   m_EditorClassIdentifier: Assembly-CSharp::GenericJutsuData
   JutsuName: New Jutsu
-  JutsuDamage: 0
-  Effects: []
-  chakraCost: 0
-  cooldown: 0
+  JutsuDamage: 10
+  animationClip: {fileID: 0}
+  Effects:
+  - {fileID: 11400000, guid: f9cee053db541d648b3a86280e161ffe, type: 2}
+  chakraCost: 10
+  cooldown: 4
   animation: {fileID: 0}

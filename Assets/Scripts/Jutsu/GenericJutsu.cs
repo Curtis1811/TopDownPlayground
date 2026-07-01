@@ -24,4 +24,5 @@ public class GenericJutsu : BaseJutsu
             effect.Apply(jutsuContext);
         }
     }
+    
 }

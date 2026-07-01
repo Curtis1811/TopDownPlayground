@@ -56,7 +56,7 @@ public class JumpState : BaseState
             return;
         }
 
-        _moveable.GameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        _moveable.GameObject.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
         _moveable.GameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, upforce), ForceMode2D.Impulse);
         jumpCount++;
     }

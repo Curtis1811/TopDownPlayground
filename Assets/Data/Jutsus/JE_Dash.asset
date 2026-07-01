@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: New JE_Dash
+  m_Name: JE_Dash
   m_EditorClassIdentifier: Assembly-CSharp::JE_Dash
-  distance: 5
+  distance: 3

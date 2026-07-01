@@ -15,7 +15,7 @@ public class CameraController
 
         if(camera == null)
         {
-            camera = Object.Instantiate(Camera.current);
+            camera = Object.Instantiate(Camera.main);
         }
 
         camera.name = $"{imoveable.GameObject.name} Cam";

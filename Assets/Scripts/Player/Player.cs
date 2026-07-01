@@ -47,7 +47,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
 
         animator = GetComponent<Animator>();
         _playerContext.moveable = this;
-        _playerContext.animator = this;
+        _playerContext.animatable = this;
     }
 
     void Start()
@@ -72,8 +72,9 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
     void RequestJutsuOneData()
     {
         BaseJutsuData data = playerdata.JutsuList[0];
-        JutsuContext context = JutsuContext.FromCaster(gameObject, transform.right);
+        JutsuContext context = JutsuContext.FromCaster(gameObject, transform.right, _playerContext);
         _playerController.JutsuAction(data, context);
+        
     }
     
     RaycastHit2D Raycast(Vector2 offset, Vector2 rayDirection, float length, LayerMask layerMask)
@@ -94,7 +95,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
 
         if (!hit)
         {
-            if (GetComponent<Rigidbody2D>().velocity.y < 0.1f)
+            if (GetComponent<Rigidbody2D>().linearVelocity.y < 0.1f)
             {
                 currentState = IMoveable.State.IsFalling;
                 animator.SetBool("IsFalling", true);
@@ -113,8 +114,8 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
     }
 }
 
-struct PlayerContext
+public struct PlayerContext
 {
     public IMoveable moveable;
-    public IAnimatable animator;
+    public IAnimatable animatable;
 }
