@@ -27,11 +27,17 @@ public class JutsuState : BaseState
 
     public override void EnterState()
     {
+        if (_jutsuData == null || _context == null)
+        {
+            Debug.LogError("JutsuData or Context is null. Cannot enter JutsuState.");
+            return;
+        }
+        
         _jutsu = _jutsuData.CreateJutsu();
         _jutsu.StartJutsu(_context);
         _context.playerContext.animatable.animator.Play("LightningBladeAttackInit");
         _context.playerContext.animatable.animator.SetTrigger("JutsuStart");
-
+        
     }
 
     public override void UpdateState()
@@ -41,8 +47,8 @@ public class JutsuState : BaseState
 
     public override void ExitState()
     {
-        // We need a end jutsu here and a transition to idel
-        
+        _context.owner.transform.position = _context.owner.transform.position; // Reset position if needed
+        // We need a end jutsu here and a transition to idle
         _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
     }
     

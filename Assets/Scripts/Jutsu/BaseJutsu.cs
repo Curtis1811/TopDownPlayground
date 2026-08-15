@@ -10,6 +10,8 @@ public abstract class BaseJutsu
     
     public abstract void StartJutsu(JutsuContext jutsuContext);
     public abstract void UpdateJutsu(JutsuContext jutsuContext);
+    public abstract void EndJutsu(JutsuContext jutsuContext);
+    
     public virtual bool IsComplete { get; set; }
     public virtual bool CanCancel { get; set;  }
 }

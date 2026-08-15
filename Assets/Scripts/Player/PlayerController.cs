@@ -77,4 +77,9 @@ public class PlayerController
         }
     }
     
+    public String GetFSMState()
+    {
+        return _fsm.GetCurrentState();
+    }
+    
 }

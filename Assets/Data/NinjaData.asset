@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Kakashi
   JutsuList:
-  - {fileID: 11400000, guid: c90464a6ca621f24a90cf7d921b44f15, type: 2}
+  - {fileID: 11400000, guid: b8d5e8e36c8539a45aeb9c4196c61645, type: 2}
   chakra: 100
   health: 0
   speed: 5

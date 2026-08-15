@@ -33,6 +33,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
     public GameObject GameObject { get; set; }
 
     public string state;
+    public string FSMState;
     private CameraController cameraController;
 
     public JutsuManager jutsuManager;
@@ -67,6 +68,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
         _playerController.Update();
         IsSetState();
         state = currentState.ToString();
+        FSMState = _playerController.GetFSMState();
     }
 
     void RequestJutsuOneData()

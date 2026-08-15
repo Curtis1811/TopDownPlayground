@@ -8,4 +8,5 @@ public class JE_Dash : JutsuEffect
     {
         jutsuContext.owner.transform.position += jutsuContext.aimDirection * distance * Time.deltaTime;
     }
+    
 }

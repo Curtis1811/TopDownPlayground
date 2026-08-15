@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 49696f7c4e8f43f8997249956db4f24e, type: 3}
   m_Name: JE_Dash
   m_EditorClassIdentifier: Assembly-CSharp::JE_Dash
-  distance: 3
+  distance: 4

@@ -52,4 +52,9 @@ public class FSM
     {
         ChangeState(StateToChangeTo);
     }
+
+    public string GetCurrentState()
+    {
+        return _currentState.ToString();
+    }
 }

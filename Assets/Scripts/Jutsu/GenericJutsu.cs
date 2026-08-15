@@ -24,5 +24,9 @@ public class GenericJutsu : BaseJutsu
             effect.Apply(jutsuContext);
         }
     }
-    
+
+    public override void EndJutsu(JutsuContext jutsuContext)
+    {
+        Debug.Log("EndJutsu");  
+    }
 }
