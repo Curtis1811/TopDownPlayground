@@ -14,5 +14,11 @@ public class Anims
         _animator.Play(animationName);
     }
 
+    public void OnAnimEnd()
+    {
+        // Handle animation end event
+    }
    
+    
+    
 }

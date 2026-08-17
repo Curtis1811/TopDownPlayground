@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GenericJutsuData
   JutsuName: Chidori
   JutsuDamage: 0
-  animationClip: {fileID: 7400000, guid: 2afd5fba79702dc4eae40be3f326af38, type: 2}
+  animationList:
+  - {fileID: 7400000, guid: b9c6ae358041e6040b704fed0bb1e698, type: 2}
+  - {fileID: 7400000, guid: 9d4b24477bb41b548995e48489bc6705, type: 2}
+  - {fileID: 7400000, guid: 2afd5fba79702dc4eae40be3f326af38, type: 2}
   Effects:
   - {fileID: 11400000, guid: dacc3b80c81e6024182ac64791caa477, type: 2}
   chakraCost: 10
   cooldown: 5
-  animation: {fileID: 0}

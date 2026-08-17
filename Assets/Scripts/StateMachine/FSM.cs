@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FSM
@@ -6,7 +7,8 @@ public class FSM
     BaseState _previousState;
     public StateFactory StateFactory;
     public IMoveable _moveable { get; private set; }
-
+    private Queue<string> _animationQueue;
+    
     public FSM(IMoveable moveable)
     {
         _moveable = moveable;
@@ -42,9 +44,11 @@ public class FSM
         if (_currentState.canTransition || StateToChangeTo == _currentState)
         {
             ChangeState(StateToChangeTo);
+            Debug.unityLogger.Log(StateToChangeTo.ToString());
             return true;
         }
 
+        Debug.Log($"Cannot transition from {_currentState} to {StateToChangeTo}");
         return false;
     }
 

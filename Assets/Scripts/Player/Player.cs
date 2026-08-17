@@ -10,6 +10,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
 
     public NinjaData playerdata;
     public Animator animator { get; set; }
+    public Action<string> animationAction { get; set; }
 
     public float Health { get; set; }
     public float offset;
@@ -113,6 +114,12 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
             currentState = IMoveable.State.IsGrounded;
             animator.SetBool("Grounded", true);
         }
+    }
+
+    public void AnimationEnd(string animationName)
+    {
+        Debug.Log("Animation ended This is from the player script");
+        animationAction?.Invoke(animationName);
     }
 }
 

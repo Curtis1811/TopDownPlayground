@@ -1,5 +1,9 @@
 using UnityEngine;
 
+
+/// <summary>
+/// Deprecated
+/// </summary>
 public class Animations
 {
     Animator _animator;
