@@ -15,6 +15,10 @@ MonoBehaviour:
   Name: Kakashi
   JutsuList:
   - {fileID: 11400000, guid: b8d5e8e36c8539a45aeb9c4196c61645, type: 2}
+  Attacks:
+  - {fileID: 11400000, guid: b35ba314a5c3902439da6effd6a55b27, type: 2}
+  - {fileID: 11400000, guid: 1fc06e3de85e9b0468af6069d0ab88da, type: 2}
+  - {fileID: 11400000, guid: ceb9cd5315476d343883d0c67270b464, type: 2}
   chakra: 100
   health: 0
   speed: 5

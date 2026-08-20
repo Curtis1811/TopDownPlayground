@@ -118,6 +118,42 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LightAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""e1ba2240-695e-4569-a5a8-53928e332469"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MediumAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""81535030-cf73-4cf4-9bf8-a36c93a0bb45"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""HeavyAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""af10a9e6-1928-4d19-aecf-f97a981adf2c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Unique"",
+                    ""type"": ""Button"",
+                    ""id"": ""abd958f8-3876-44e7-ba9d-6faaf209cdb6"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -263,6 +299,50 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""action"": ""JutsuOne"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""17c58594-1600-40ed-9937-55f901ec9940"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""227a4ae9-2b10-48bc-8a44-34da6da36215"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MediumAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3cc2befa-7ab1-412b-99aa-da90f945a4b8"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""09514f06-6e87-4561-b8be-0448b56c2d3c"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Unique"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -274,6 +354,10 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_PlayerAction_Movement = m_PlayerAction.FindAction("Movement", throwIfNotFound: true);
         m_PlayerAction_Jump = m_PlayerAction.FindAction("Jump", throwIfNotFound: true);
         m_PlayerAction_JutsuOne = m_PlayerAction.FindAction("JutsuOne", throwIfNotFound: true);
+        m_PlayerAction_LightAttack = m_PlayerAction.FindAction("LightAttack", throwIfNotFound: true);
+        m_PlayerAction_MediumAttack = m_PlayerAction.FindAction("MediumAttack", throwIfNotFound: true);
+        m_PlayerAction_HeavyAttack = m_PlayerAction.FindAction("HeavyAttack", throwIfNotFound: true);
+        m_PlayerAction_Unique = m_PlayerAction.FindAction("Unique", throwIfNotFound: true);
     }
 
     ~@PlayerInputAction()
@@ -357,6 +441,10 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerAction_Movement;
     private readonly InputAction m_PlayerAction_Jump;
     private readonly InputAction m_PlayerAction_JutsuOne;
+    private readonly InputAction m_PlayerAction_LightAttack;
+    private readonly InputAction m_PlayerAction_MediumAttack;
+    private readonly InputAction m_PlayerAction_HeavyAttack;
+    private readonly InputAction m_PlayerAction_Unique;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerAction".
     /// </summary>
@@ -380,6 +468,22 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "PlayerAction/JutsuOne".
         /// </summary>
         public InputAction @JutsuOne => m_Wrapper.m_PlayerAction_JutsuOne;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerAction/LightAttack".
+        /// </summary>
+        public InputAction @LightAttack => m_Wrapper.m_PlayerAction_LightAttack;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerAction/MediumAttack".
+        /// </summary>
+        public InputAction @MediumAttack => m_Wrapper.m_PlayerAction_MediumAttack;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerAction/HeavyAttack".
+        /// </summary>
+        public InputAction @HeavyAttack => m_Wrapper.m_PlayerAction_HeavyAttack;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerAction/Unique".
+        /// </summary>
+        public InputAction @Unique => m_Wrapper.m_PlayerAction_Unique;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -415,6 +519,18 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @JutsuOne.started += instance.OnJutsuOne;
             @JutsuOne.performed += instance.OnJutsuOne;
             @JutsuOne.canceled += instance.OnJutsuOne;
+            @LightAttack.started += instance.OnLightAttack;
+            @LightAttack.performed += instance.OnLightAttack;
+            @LightAttack.canceled += instance.OnLightAttack;
+            @MediumAttack.started += instance.OnMediumAttack;
+            @MediumAttack.performed += instance.OnMediumAttack;
+            @MediumAttack.canceled += instance.OnMediumAttack;
+            @HeavyAttack.started += instance.OnHeavyAttack;
+            @HeavyAttack.performed += instance.OnHeavyAttack;
+            @HeavyAttack.canceled += instance.OnHeavyAttack;
+            @Unique.started += instance.OnUnique;
+            @Unique.performed += instance.OnUnique;
+            @Unique.canceled += instance.OnUnique;
         }
 
         /// <summary>
@@ -435,6 +551,18 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @JutsuOne.started -= instance.OnJutsuOne;
             @JutsuOne.performed -= instance.OnJutsuOne;
             @JutsuOne.canceled -= instance.OnJutsuOne;
+            @LightAttack.started -= instance.OnLightAttack;
+            @LightAttack.performed -= instance.OnLightAttack;
+            @LightAttack.canceled -= instance.OnLightAttack;
+            @MediumAttack.started -= instance.OnMediumAttack;
+            @MediumAttack.performed -= instance.OnMediumAttack;
+            @MediumAttack.canceled -= instance.OnMediumAttack;
+            @HeavyAttack.started -= instance.OnHeavyAttack;
+            @HeavyAttack.performed -= instance.OnHeavyAttack;
+            @HeavyAttack.canceled -= instance.OnHeavyAttack;
+            @Unique.started -= instance.OnUnique;
+            @Unique.performed -= instance.OnUnique;
+            @Unique.canceled -= instance.OnUnique;
         }
 
         /// <summary>
@@ -496,5 +624,33 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnJutsuOne(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "LightAttack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLightAttack(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "MediumAttack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMediumAttack(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "HeavyAttack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnHeavyAttack(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Unique" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUnique(InputAction.CallbackContext context);
     }
 }

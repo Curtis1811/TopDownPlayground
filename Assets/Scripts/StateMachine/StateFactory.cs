@@ -1,3 +1,4 @@
+using StateMachine.States;
 using UnityEngine;
 
 public class StateFactory
@@ -7,8 +8,10 @@ public class StateFactory
     public BaseState IdleState;
     public BaseState MoveState;
     public BaseState JumpState;
+    public BaseState AttackState;
     
     public JutsuState JutsuState;
+    
 
 
     public StateFactory(FSM fsm)
@@ -18,6 +21,7 @@ public class StateFactory
         MoveState = CreateMoveState();  
         JumpState = CreateJumpState();
         JutsuState = CreateJutsuState();
+        AttackState = CreateAttackAction();
     }
 
     private BaseState CreateIdleState()
@@ -38,5 +42,10 @@ public class StateFactory
     private JutsuState CreateJutsuState()
     {
         return new JutsuState(_fsm);
+    }
+
+    public BaseState CreateAttackAction()
+    {
+        return new AttackState(_fsm);
     }
 }

@@ -9,6 +9,7 @@ public class NinjaData : ScriptableObject
 {
     public string Name;
     public List<BaseJutsuData> JutsuList = new();
+    public List<AttackData> Attacks = new();
     public int chakra;
     public float health;
     public float speed;

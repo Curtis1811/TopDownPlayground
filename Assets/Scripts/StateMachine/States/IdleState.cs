@@ -20,6 +20,6 @@ public class IdleState : BaseState
 
     public override void UpdateState()
     {
-        Debug.Log("IdleState update");
+        //Debug.Log("IdleState update");
     }
 }

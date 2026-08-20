@@ -10,7 +10,8 @@ public class JutsuState : BaseState
     private Queue<AnimationClip> _animationQueue = new Queue<AnimationClip>();
     public int startFrame = 0;
     public int endFrame = 0;
-
+    public bool updateEffect = false;
+    
     AnimatorStateInfo _currentAnimationStateInfo;
 
     /// <summary>
@@ -26,6 +27,7 @@ public class JutsuState : BaseState
         _jutsuData = jutsuData;
         _context = context;
         _context.playerContext.animatable.animationAction += AnimationAction;
+        _animationQueue.Clear();
         _jutsuData.animationList.ForEach(animation => _animationQueue.Enqueue(animation));
     }
 
@@ -39,38 +41,61 @@ public class JutsuState : BaseState
 
         _jutsu = _jutsuData.CreateJutsu();
         _jutsu.StartJutsu(_context);
-        _context.playerContext.animatable.animator.Play("LightningBladeAttackInit");
+        canTransition = false;
         _context.playerContext.animatable.animator.SetTrigger("JutsuStart");
-        _currentAnimationStateInfo = _context.playerContext.animatable.animator.GetCurrentAnimatorStateInfo(0);
     }
 
     public override void UpdateState()
     {
         // Here we want to update our animation list and check if we are at the end of the animation and then exit the state.
-        _jutsu.UpdateJutsu(_context);
+    
+        if(updateEffect)
+        {
+            _jutsu.UpdateJutsu(_context);
+        }
+
+        Debug.Log(_animationQueue.Count);
+        if (_context.playerContext.animatable.animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+        {
+            PlayAnimation();
+        }
+        
     }
 
     public override void ExitState()
     {
         _context.owner.transform.position = _context.owner.transform.position; // Reset position if needed
         _context.playerContext.animatable.animationAction -= AnimationAction;
+        canTransition = false;
+        _context.playerContext.animatable.animator.StopPlayback();
     }
 
-    public void AnimationAction(string test)
+    public void AnimationAction(string eventString)
     {
-        if (_animationQueue.Count > 0)
+
+        if (eventString == "AttackStart")
         {
-            PlayAnimation();
+            updateEffect = true;
         }
-        Debug.Log($"Action FromAnimation We can exit the state now.{test}");
-        canTransition = true;
-        _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
+        else
+        {
+            canTransition = true;
+            updateEffect = false;
+        }
     }
 
     private void PlayAnimation()
     {
         if (_animationQueue.Count > 0)
-            _context.playerContext.animatable.animator.Play(_animationQueue.Dequeue().name);
+        {
+            var animation = _animationQueue.Dequeue();
+            _context.playerContext.animatable.animator.Play(animation.name, 0, 0f);
+        }
+        else
+        {
+            _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
+            canTransition = true;
+            updateEffect = false;
+        }
     }
 }
-

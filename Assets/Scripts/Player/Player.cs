@@ -39,6 +39,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
 
     public JutsuManager jutsuManager;
     public List<BaseJutsuData> jutsus = new();
+    public List<AttackData> attacks = new();
 
     private void Awake()
     {
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
         GameObject = gameObject;
         position = transform.position;
         jutsus = playerdata.JutsuList;
+        attacks = playerdata.Attacks;
 
         animator = GetComponent<Animator>();
         _playerContext.moveable = this;
@@ -55,8 +57,11 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
     void Start()
     {
         cameraController = new CameraController(this);
-        _playerController = new PlayerController((IMoveable)this, (IAnimatable)this);
+        _playerController = new PlayerController(_playerContext);
         _playerController.OnJutsuOneInput += RequestJutsuOneData; // subscribe
+        _playerController.OnLightAttackAction += (index) => RequestAttackData(index);
+        _playerController.OnMediumAttackAction += (index) => RequestAttackData(index);
+        _playerController.OnHeavyAttackAction += (index) => RequestAttackData(index);
     }
 
     void Update()
@@ -65,7 +70,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
         {
             cameraController.FollowEntity();
         }
-        
+
         _playerController.Update();
         IsSetState();
         state = currentState.ToString();
@@ -77,9 +82,19 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
         BaseJutsuData data = playerdata.JutsuList[0];
         JutsuContext context = JutsuContext.FromCaster(gameObject, transform.right, _playerContext);
         _playerController.JutsuAction(data, context);
-        
     }
-    
+
+    void RequestAttackData(int AttackIndex)
+    {
+        if (AttackIndex < 0 || AttackIndex >= attacks.Count)
+        {
+            Debug.LogWarning("Invalid attack index: " + AttackIndex);
+            return;
+        }
+
+        _playerController.AttackAction(AttackIndex, attacks[AttackIndex], _playerContext);
+    }
+
     RaycastHit2D Raycast(Vector2 offset, Vector2 rayDirection, float length, LayerMask layerMask)
     {
         Vector2 pos = transform.position;
@@ -116,7 +131,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
         }
     }
 
-    public void AnimationEnd(string animationName)
+    public void AnimationEvent(string animationName)
     {
         Debug.Log("Animation ended This is from the player script");
         animationAction?.Invoke(animationName);

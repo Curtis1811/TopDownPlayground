@@ -4,21 +4,17 @@ using UnityEngine;
 /// <summary>
 /// Deprecated
 /// </summary>
-public class Animations
+public static class Animation
 {
-    Animator _animator;
-    
-    public Animations(Animator animator)
-    {
-        // This is the constructor for our animayort
-        _animator = animator;
-        Debug.Log("Animation Constructor");
-    }
-
-    public void PlayAnimation(string animationName)
-    {
-        // This is the method to play the animation
-        _animator.Play(animationName);
-    }
-
+    // public static float GetCurrentAnimationFrame()
+    // {
+    //     AnimatorStateInfo stateInfo = _context.animatable.animator.GetCurrentAnimatorStateInfo(0);
+    //     AnimationClip currentClip = _context.animatable.animator.GetCurrentAnimatorClipInfo(0)[0].clip;
+    //
+    //     // normalizedTime is 0-1, multiply by frame count to get current frame
+    //     int frameCount = (int)(currentClip.length * currentClip.frameRate);
+    //     int currentFrame = (int)(stateInfo.normalizedTime * frameCount) % frameCount;
+    //     Debug.Log(frameCount);
+    //     return currentFrame;
+    // }
 }

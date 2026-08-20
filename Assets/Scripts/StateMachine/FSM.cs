@@ -7,7 +7,6 @@ public class FSM
     BaseState _previousState;
     public StateFactory StateFactory;
     public IMoveable _moveable { get; private set; }
-    private Queue<string> _animationQueue;
     
     public FSM(IMoveable moveable)
     {
@@ -44,7 +43,7 @@ public class FSM
         if (_currentState.canTransition || StateToChangeTo == _currentState)
         {
             ChangeState(StateToChangeTo);
-            Debug.unityLogger.Log(StateToChangeTo.ToString());
+            Debug.Log(StateToChangeTo.ToString());
             return true;
         }
 
