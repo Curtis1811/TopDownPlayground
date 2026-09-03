@@ -39,6 +39,7 @@ namespace StateMachine.States
                 _hasPlayedNextAnimation = true; 
                 _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
                 Debug.Log( "StateChange to IdleState");
+                
             }else if (_context.animatable.animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
             {
                 _hasPlayedNextAnimation = false;
