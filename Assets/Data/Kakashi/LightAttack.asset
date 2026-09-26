@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b4c3027eed37443933beb7ac26cb6d, type: 3}
   m_Name: LightAttack
   m_EditorClassIdentifier: Assembly-CSharp::AttackData
-  Damage: 0
-  HitStun: 0
-  BlockStun: 0
-  hitbox: {x: 1, y: 1}
-  hitboxFrameActivation: 0
-  hitboxFrameDeactivation: 4
+  damage: 0
+  hitStun: 0
+  blockStun: 0
   animation: {fileID: 7400000, guid: 96d0dd08310d3a540a08c4cb2f479ff3, type: 2}
+  hitHitbox:
+  - startFrame: 0
+    endFrame: 0
+    position: {x: 0, y: 0}
+    size: {x: 0, y: 0}

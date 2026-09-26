@@ -2,19 +2,19 @@
 
 public class JutsuContext
 {
-    public static JutsuContext FromCaster(GameObject owner, Vector3 direction, PlayerContext playerContext)
+    public static JutsuContext FromCaster(GameObject owner, Vector3 direction, CharacterContext characterContext)
     {
         return new JutsuContext
         {
             owner = owner,
             aimDirection = direction,
-            playerContext = playerContext
+            CharacterContext = characterContext
         };
     }
     
     public GameObject owner;
     public Vector3 aimDirection;
-    public PlayerContext playerContext;
+    public CharacterContext CharacterContext;
     
 }
 

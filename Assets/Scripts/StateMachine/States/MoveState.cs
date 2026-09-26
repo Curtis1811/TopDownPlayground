@@ -14,7 +14,7 @@ public class MoveState : BaseState
         _moveable = _fsm._moveable;
     }
 
-    public override void UpdateState()
+    public override void FixedUpdateState()
     {
         Move();
         Debug.Log("MoveState Update");

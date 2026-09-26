@@ -13,13 +13,11 @@ public class FSM
         _moveable = moveable;
         StateFactory = new StateFactory(this);
         _currentState = StateFactory.IdleState;
-        Debug.Log(_moveable);
     }
-
-    // Update is called once per frame
-    public void UpdateState()
+    
+    public void FixedUpdateState()
     {
-        _currentState.UpdateState();
+        _currentState.FixedUpdateState();
     }
 
     private void ChangeState(BaseState StateToChangeTo)
@@ -47,7 +45,7 @@ public class FSM
             return true;
         }
 
-        Debug.Log($"Cannot transition from {_currentState} to {StateToChangeTo}");
+        //Debug.Log($"Cannot transition from {_currentState} to {StateToChangeTo}");
         return false;
     }
 

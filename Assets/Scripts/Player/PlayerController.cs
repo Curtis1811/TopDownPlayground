@@ -9,22 +9,26 @@ public class PlayerController
     private IMoveable _moveable;
     private FSM _fsm;
     private Animator _animator;
-    private PlayerContext _playerContext;
+    private CharacterContext _characterContext;
     public event Action OnJutsuOneInput;
     public event Action<int> OnLightAttackAction;
     public event Action<int> OnMediumAttackAction;
     public event Action<int> OnHeavyAttackAction;
 
-    public PlayerController(PlayerContext playerContext)
+    bool IsDirectionHeld;
+    private Collider2D _hitbox;
+
+    public PlayerController(CharacterContext characterContext, Collider2D hitbox = null)
     {
-        _moveable = playerContext.moveable;
-        _animator = playerContext.animatable.animator;
-        _playerContext = playerContext;
+        _moveable = characterContext.moveable;
+        _animator = characterContext.animatable.animator;
+        _characterContext = characterContext;
+        _hitbox = hitbox;
         inputManager = new InputManager();
         inputManager.MoveAction += MoveAction;
         inputManager.JumpAction += JumpAction;
         inputManager.JutsuoneAction += () => OnJutsuOneInput?.Invoke();
-        
+
         inputManager.LightAttackAction += (index) => OnLightAttackAction?.Invoke(index);
         inputManager.MediumAttackAction += (index) => OnMediumAttackAction?.Invoke(index);
         inputManager.HeavyAttackAction += (index) => OnHeavyAttackAction?.Invoke(index);
@@ -32,21 +36,16 @@ public class PlayerController
         _fsm = new FSM(_moveable);
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
-        _fsm.UpdateState();
-    }
+        _fsm.FixedUpdateState();
 
-    void MoveAction(Vector2 direction)
-    {
-        _moveable.direction = new Vector3(direction.x, direction.y, _moveable.position.z);
-
-        if (direction == Vector2.zero)
+        if (_moveable.direction == Vector2.zero && _fsm.GetCurrentState() != "IdleState")
         {
             _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
         }
 
-        if (direction != Vector2.zero)
+        if (_moveable.direction != Vector2.zero)
         {
             if (_fsm.RequestStateChange(_fsm.StateFactory.MoveState))
             {
@@ -55,40 +54,43 @@ public class PlayerController
             }
         }
 
-        if (direction == Vector2.zero)
-        {
-            _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
-        }
+        _animator.SetFloat("MoveSpeed", 0);
+    }
 
+
+    void MoveAction(Vector2 direction)
+    {
+        // Everything here needs to get removed or changed as we shouldnt be figuring out what out state machine should do at this stage
+        _moveable.direction = new Vector3(direction.x, direction.y, _moveable.position.z);
         _animator.SetFloat("MoveSpeed", 0);
     }
 
     void JumpAction()
     {
+        _fsm.StateFactory.JumpState.PrepareState(_characterContext);
+
         if (_fsm.RequestStateChange(_fsm.StateFactory.JumpState))
         {
             _moveable.currentState = IMoveable.State.InAir;
-            _animator.SetTrigger("Jump");
-            _animator.SetBool("Grounded", false);
         }
 
         Debug.Log("Jump from player");
     }
-    
+
     #region Attacks
-    
+
     public void JutsuAction(BaseJutsuData data, JutsuContext context)
     {
         _fsm.StateFactory.JutsuState.PrepareJutsu(data, context);
         _fsm.RequestStateChange(_fsm.StateFactory.JutsuState);
     }
 
-    public void AttackAction(int attackIndex, AttackData data, PlayerContext playerContext)
+    public void AttackAction(int attackIndex, AttackData data, CharacterContext characterContext)
     {
-        (_fsm.StateFactory.AttackState as AttackState).PrepareAttack(playerContext, data);
+        (_fsm.StateFactory.AttackState as AttackState).PrepareAttack(characterContext, _hitbox, data);
         _fsm.RequestStateChange(_fsm.StateFactory.AttackState);
     }
-    
+
     #endregion
 
     public String GetFSMState()

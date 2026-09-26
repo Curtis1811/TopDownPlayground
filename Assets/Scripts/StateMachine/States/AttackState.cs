@@ -4,80 +4,59 @@ namespace StateMachine.States
 {
     public class AttackState : BaseState
     {
-        
-        private PlayerContext _context;
+        private CharacterContext _context;
         private AttackData _attackData;
+        private HitboxHandler _hitboxHandler;
+        private Collider2D hitbox;
+
         private bool _hasPlayedNextAnimation = false;
-        private Hitbox _hitbox;
-        
+        public float timer = 0f;
+
+
         public AttackState(FSM fsm) : base(fsm)
         {
-            
         }
 
-        public void PrepareAttack(PlayerContext context, AttackData attackData)
+        // TODO :This will need to change to an entity context so AI can use
+        public void PrepareAttack(CharacterContext context, Collider2D hitbox, AttackData attackData)
         {
             _context = context;
             _attackData = attackData;
-            _hitbox = new Hitbox();
-            _hitbox.CreateHitbox(new Vector3(0,0), _attackData.hitbox);
+            this.hitbox = hitbox;
         }
-        
+
         public override void EnterState()
         {
             _context.animatable.animator.Play(_attackData.animation.name);
+            timer = 0;
+            _hitboxHandler = new HitboxHandler();
+            _hitboxHandler.CreateHitbox(_attackData.hitHitbox[0].position, 
+                _attackData.hitHitbox[0].size, _attackData.damage, hitbox);
+            _hitboxHandler.ActivateHitbox();
+            canTransition = false;
+            Debug.Log(_attackData.animation.length);
+            // just for testing when we enter the state we will create a hitbox and 
+            // test the dmg od the attack
         }
 
-        public override void UpdateState()
+        public override void FixedUpdateState()
         {
-            Debug.Log(_context.animatable.animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
-           // Debug.Log(_context.animatable.animator.GetCurrentAnimatorStateInfo(0).);
-            
-            if (_context.animatable.animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 && !_hasPlayedNextAnimation)
+            timer += Time.deltaTime;
+
+            if (timer > _attackData.animation.length)
             {
                 canTransition = true;
-                _hasPlayedNextAnimation = true; 
+                _hasPlayedNextAnimation = true;
                 _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
-                Debug.Log( "StateChange to IdleState");
-                
-            }else if (_context.animatable.animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
-            {
-                _hasPlayedNextAnimation = false;
             }
-            
-            if (GetCurrentAnimationFrame() >= _attackData.hitboxFrameActivation && GetCurrentAnimationFrame() <= _attackData.hitboxFrameDeactivation)
-            {
-                Debug.Log("Activate Hitbox");
-                _hitbox.ActivateHitbox();
-            }
-            
-             if (GetCurrentAnimationFrame() > _attackData.hitboxFrameDeactivation)
-             {
-                 Debug.Log("Deactivate Hitbox");
-                 _hitbox.DeactivateHitbox();
-             }
-        
-            //_attackData.hitboxFrameActivation;
-
-            //_attackData.hitboxFrameDeactivation;
         }
+
 
         public override void ExitState()
-        { 
-            _context.animatable.animator.StopPlayback();
-        }
-        
-        public float GetCurrentAnimationFrame()
         {
-            AnimatorStateInfo stateInfo = _context.animatable.animator.GetCurrentAnimatorStateInfo(0);
-            AnimationClip currentClip = _context.animatable.animator.GetCurrentAnimatorClipInfo(0)[0].clip;
-            Debug.Log("Current Clip Length: " + currentClip.name);
-            // normalizedTime is 0-1, multiply by frame count to get current frame
-            int frameCount = (int)(currentClip.length * currentClip.frameRate);
-            int currentFrame = (int)(stateInfo.normalizedTime * frameCount) % frameCount;
-            //Debug.Log( "Frame Count"  + frameCount);
-            //Debug.Log("Current Frame" + currentFrame);
-            return currentFrame;
+            _context.animatable.animator.StopPlayback();
+            _hitboxHandler.DeactivateHitbox();
+            _hitboxHandler = null;
         }
     }
 }

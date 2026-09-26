@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-using UnityEngine.WSA;
 
 public abstract class BaseState
 {
@@ -10,10 +8,17 @@ public abstract class BaseState
         _fsm = fsm;
     }
 
+    public virtual void PrepareState(CharacterContext context)
+    {
+        // This method can be overridden in derived classes to prepare the state with the given context
+    }
+    
     public abstract void EnterState();
 
-    public abstract void UpdateState();
-
+    public abstract void FixedUpdateState();
+   
     public abstract void ExitState();
+    
+    
 }
   

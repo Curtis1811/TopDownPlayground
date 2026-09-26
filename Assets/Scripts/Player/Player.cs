@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
+public class Player : MonoBehaviour, IMoveable, IDamageable, IAnimatable
 {
-    private PlayerContext _playerContext = new();
+    private CharacterContext _characterContext = new();
     private PlayerController _playerController;
 
     public NinjaData playerdata;
     public Animator animator { get; set; }
     public Action<string> animationAction { get; set; }
 
-    public float Health { get; set; }
+    public float health { get; set; }
     public float offset;
     public LayerMask layerMask;
     public bool CheckStatus;
+    public BoxCollider2D hitboxCollider;
 
     #region IMoveable
 
     public Vector3 position { get; set; }
 
-    public Vector3 direction { get; set; }
+    public Vector2 direction { get; set; }
 
     public float speed => playerdata.speed;
 
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
     public IMoveable.State currentState { get; set; }
 
     #endregion
+
 
     public GameObject GameObject { get; set; }
 
@@ -43,48 +45,52 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
 
     private void Awake()
     {
-        Health = playerdata.health;
+        health = playerdata.health;
         GameObject = gameObject;
         position = transform.position;
         jutsus = playerdata.JutsuList;
         attacks = playerdata.Attacks;
 
         animator = GetComponent<Animator>();
-        _playerContext.moveable = this;
-        _playerContext.animatable = this;
+        _characterContext.moveable = this;
+        _characterContext.animatable = this;
     }
 
-    void Start()
+    private void Start()
     {
         cameraController = new CameraController(this);
-        _playerController = new PlayerController(_playerContext);
+        _playerController = new PlayerController(_characterContext, hitboxCollider);
         _playerController.OnJutsuOneInput += RequestJutsuOneData; // subscribe
         _playerController.OnLightAttackAction += (index) => RequestAttackData(index);
         _playerController.OnMediumAttackAction += (index) => RequestAttackData(index);
         _playerController.OnHeavyAttackAction += (index) => RequestAttackData(index);
     }
 
-    void Update()
+    private void Update()
+    {
+    }
+
+    private void FixedUpdate()
     {
         if (cameraController != null)
         {
             cameraController.FollowEntity();
         }
 
-        _playerController.Update();
+        _playerController.FixedUpdate();
         IsSetState();
         state = currentState.ToString();
         FSMState = _playerController.GetFSMState();
     }
 
-    void RequestJutsuOneData()
+    private void RequestJutsuOneData()
     {
         BaseJutsuData data = playerdata.JutsuList[0];
-        JutsuContext context = JutsuContext.FromCaster(gameObject, transform.right, _playerContext);
+        JutsuContext context = JutsuContext.FromCaster(gameObject, transform.right, _characterContext);
         _playerController.JutsuAction(data, context);
     }
 
-    void RequestAttackData(int AttackIndex)
+    private void RequestAttackData(int AttackIndex)
     {
         if (AttackIndex < 0 || AttackIndex >= attacks.Count)
         {
@@ -92,10 +98,10 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
             return;
         }
 
-        _playerController.AttackAction(AttackIndex, attacks[AttackIndex], _playerContext);
+        _playerController.AttackAction(AttackIndex, attacks[AttackIndex], _characterContext);
     }
 
-    RaycastHit2D Raycast(Vector2 offset, Vector2 rayDirection, float length, LayerMask layerMask)
+    private RaycastHit2D Raycast(Vector2 offset, Vector2 rayDirection, float length, LayerMask layerMask)
     {
         Vector2 pos = transform.position;
         Physics2D.IgnoreLayerCollision(2, 3);
@@ -106,39 +112,44 @@ public class Player : MonoBehaviour, IEntity, IMoveable, IDamageble, IAnimatable
         return hit;
     }
 
-    void IsSetState()
+    private void IsSetState()
     {
         var sizeOfRay = this.GetComponent<BoxCollider2D>().size.y / 2 + offset;
         RaycastHit2D hit = Raycast(new Vector2(0, 0), Vector2.down, sizeOfRay, layerMask);
+        Debug.DrawRay(transform.position, Vector2.down * sizeOfRay, Color.red);
 
         if (!hit)
         {
-            if (GetComponent<Rigidbody2D>().linearVelocity.y < 0.1f)
+            if (GetComponent<Rigidbody2D>().linearVelocity.y < -0.1f)
             {
                 currentState = IMoveable.State.IsFalling;
-                animator.SetBool("IsFalling", true);
+
                 return;
             }
 
             currentState = IMoveable.State.InAir;
-            animator.SetTrigger("Jump");
-            animator.SetBool("Grounded", false);
         }
-        else if (hit.collider.gameObject.tag == "Ground")
+        else if (hit.collider.gameObject.tag == "Ground" && GetComponent<Rigidbody2D>().linearVelocity.y <= 0)
         {
             currentState = IMoveable.State.IsGrounded;
-            animator.SetBool("Grounded", true);
         }
     }
 
-    public void AnimationEvent(string animationName)
+    private void OnDrawGizmos()
     {
-        Debug.Log("Animation ended This is from the player script");
-        animationAction?.Invoke(animationName);
+        var sizeOfRay = this.GetComponent<BoxCollider2D>().size.y / 2 + offset;
+        RaycastHit2D hit = Raycast(new Vector2(0, 0), Vector2.down, sizeOfRay, layerMask);
+        Debug.DrawRay(transform.position, Vector2.down * sizeOfRay, Color.red);
+    }
+    
+    public void OnDeath()
+    {
+        Debug.Log("Player has died.");
+        enabled = false;
     }
 }
 
-public struct PlayerContext
+public struct CharacterContext
 {
     public IMoveable moveable;
     public IAnimatable animatable;

@@ -2,23 +2,21 @@
 
 public class Anims
 {
-    private Animator _animator;
-
-    public Anims(Animator animator)
-    {
-        _animator = animator;
-    }
-
-    public void PlayAnimation(string animationName)
-    {
-        _animator.Play(animationName);
-    }
-
-    public void OnAnimEnd()
-    {
-        // Handle animation end event
-    }
-   
-    
-    
+    // private Animator _animator;
+    //
+    // public Anims(Animator animator)
+    // {
+    //     _animator = animator;
+    // }
+    //
+    // public void PlayAnimation(string animationName)
+    // {
+    //     _animator.Play(animationName);
+    // }
+    //
+    // public void OnAnimEnd()
+    // {
+    //     // Handle animation end event
+    // }
+    //
 }

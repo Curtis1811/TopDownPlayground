@@ -11,24 +11,29 @@ public class JutsuState : BaseState
     public int startFrame = 0;
     public int endFrame = 0;
     public bool updateEffect = false;
+    public HitboxHandler _hitboxHandler;
     
-    AnimatorStateInfo _currentAnimationStateInfo;
+    private AnimationClip _currentAnimation;
 
+    public float _timer;
+    
     /// <summary>
     /// We need some kind of frame data System here to handle the jutsu execution and update and exiting.
     /// </summary>
     /// <param name="fsm"></param>
+    
     public JutsuState(FSM fsm) : base(fsm)
     {
     }
 
+    // TODO: refactor so its not just a player context thing encase we need AI To use aswell.
     public void PrepareJutsu(BaseJutsuData jutsuData, JutsuContext context)
     {
         _jutsuData = jutsuData;
         _context = context;
-        _context.playerContext.animatable.animationAction += AnimationAction;
         _animationQueue.Clear();
         _jutsuData.animationList.ForEach(animation => _animationQueue.Enqueue(animation));
+        _hitboxHandler = new HitboxHandler();
     }
 
     public override void EnterState()
@@ -38,48 +43,49 @@ public class JutsuState : BaseState
             Debug.LogError("JutsuData or Context is null. Cannot enter JutsuState.");
             return;
         }
-
+        //_hitboxHandler.CreateHitbox(_jutsuData.hitHitbox[0].position, _jutsuData.hitHitbox[0].size, _jutsuData.damage);
+            
         _jutsu = _jutsuData.CreateJutsu();
         _jutsu.StartJutsu(_context);
         canTransition = false;
-        _context.playerContext.animatable.animator.SetTrigger("JutsuStart");
+        PlayAnimation();
+        _context.CharacterContext.animatable.animator.SetTrigger("JutsuStart");
     }
 
-    public override void UpdateState()
+    public override void FixedUpdateState()
     {
         // Here we want to update our animation list and check if we are at the end of the animation and then exit the state.
-    
         if(updateEffect)
         {
             _jutsu.UpdateJutsu(_context);
         }
-
-        Debug.Log(_animationQueue.Count);
-        if (_context.playerContext.animatable.animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+        
+        _timer += Time.deltaTime;
+        
+        Debug.Log($"Animation Queue Count: {_animationQueue.Count}");
+        if (_currentAnimation != null && _currentAnimation.length <= _timer)
         {
             PlayAnimation();
+            AnimationAction();
         }
-        
     }
 
     public override void ExitState()
     {
         _context.owner.transform.position = _context.owner.transform.position; // Reset position if needed
-        _context.playerContext.animatable.animationAction -= AnimationAction;
+        updateEffect = false;
         canTransition = false;
-        _context.playerContext.animatable.animator.StopPlayback();
+        _context.CharacterContext.animatable.animator.StopPlayback();
     }
 
-    public void AnimationAction(string eventString)
+    public void AnimationAction()
     {
-
-        if (eventString == "AttackStart")
+        if (_animationQueue.Count == 1)
         {
             updateEffect = true;
         }
         else
         {
-            canTransition = true;
             updateEffect = false;
         }
     }
@@ -88,14 +94,16 @@ public class JutsuState : BaseState
     {
         if (_animationQueue.Count > 0)
         {
-            var animation = _animationQueue.Dequeue();
-            _context.playerContext.animatable.animator.Play(animation.name, 0, 0f);
+            _currentAnimation = _animationQueue.Dequeue();
+            _context.CharacterContext.animatable.animator.Play(_currentAnimation.name, 0, 0f);
+            _timer = 0;
         }
         else
         {
-            _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
             canTransition = true;
             updateEffect = false;
+            _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
+            
         }
     }
 }

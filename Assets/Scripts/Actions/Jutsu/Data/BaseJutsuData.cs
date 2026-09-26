@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseJutsuData : ScriptableObject
+public abstract class BaseJutsuData : ActionData
 {
-    public string JutsuName = "New Jutsu";
-    public int JutsuDamage;
+    public string jutsuName = "New Jutsu";
 
     public List<AnimationClip> animationList;
     public abstract BaseJutsu CreateJutsu();

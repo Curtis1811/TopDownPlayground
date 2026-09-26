@@ -1,6 +1,4 @@
-using System.Runtime.Versioning;
-using UnityEditor.Animations;
-using UnityEngine;
+
 
 // public class Chidori : BaseJutsu, IDealDamage
 // {

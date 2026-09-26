@@ -1,6 +1,6 @@
 
 public interface IDealDamage
 {
-    public int Damage {get; set;}
+    public int damage {get; set;}
     
 }
