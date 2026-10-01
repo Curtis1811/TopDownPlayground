@@ -12,16 +12,16 @@ public class JutsuState : BaseState
     public int endFrame = 0;
     public bool updateEffect = false;
     public HitboxHandler _hitboxHandler;
-    
     private AnimationClip _currentAnimation;
 
+    public bool hasPlayedFirstAnim = false;
+
     public float _timer;
-    
+
     /// <summary>
     /// We need some kind of frame data System here to handle the jutsu execution and update and exiting.
     /// </summary>
     /// <param name="fsm"></param>
-    
     public JutsuState(FSM fsm) : base(fsm)
     {
     }
@@ -44,29 +44,33 @@ public class JutsuState : BaseState
             return;
         }
         //_hitboxHandler.CreateHitbox(_jutsuData.hitHitbox[0].position, _jutsuData.hitHitbox[0].size, _jutsuData.damage);
-            
+
         _jutsu = _jutsuData.CreateJutsu();
         _jutsu.StartJutsu(_context);
         canTransition = false;
-        PlayAnimation();
-        _context.CharacterContext.animatable.animator.SetTrigger("JutsuStart");
+        //_context.CharacterContext.animatable.animator.SetTrigger("JutsuStart");
     }
 
     public override void FixedUpdateState()
     {
         // Here we want to update our animation list and check if we are at the end of the animation and then exit the state.
-        if(updateEffect)
-        {
-            _jutsu.UpdateJutsu(_context);
-        }
-        
         _timer += Time.deltaTime;
-        
+
         Debug.Log($"Animation Queue Count: {_animationQueue.Count}");
-        if (_currentAnimation != null && _currentAnimation.length <= _timer)
+        if (!hasPlayedFirstAnim)
+        {
+            PlayAnimation();
+            hasPlayedFirstAnim = true;
+        }
+        else if (_currentAnimation != null && _currentAnimation.length <= _timer)
         {
             PlayAnimation();
             AnimationAction();
+        }
+
+        if (updateEffect)
+        {
+            _jutsu.UpdateJutsu(_context);
         }
     }
 
@@ -103,7 +107,6 @@ public class JutsuState : BaseState
             canTransition = true;
             updateEffect = false;
             _fsm.RequestStateChange(_fsm.StateFactory.IdleState);
-            
         }
     }
 }

@@ -7,20 +7,20 @@ public class CameraController
     
     public float offset = 0f;
 
-    public CameraController(IMoveable imoveable)
+    public CameraController(IMoveable iMoveable)
     {
-        this._cameraEntity = imoveable;
+        this._cameraEntity = iMoveable;
 
         if(camera == null)
         {
             camera = Object.Instantiate(Camera.main);
         }
 
-        camera.name = $"{imoveable.GameObject.name} Cam";
+        camera.name = $"{iMoveable.GameObject.name} Cam";
         camera.orthographic = true;
         camera.orthographicSize = 2;
         camera.enabled = true;
-        camera.transform.position = new Vector3(imoveable.GameObject.transform.position.x, imoveable.GameObject.transform.position.y, 0);
+        camera.transform.position = new Vector3(iMoveable.GameObject.transform.position.x, iMoveable.GameObject.transform.position.y, 0);
     }
 
     public void FollowEntity()

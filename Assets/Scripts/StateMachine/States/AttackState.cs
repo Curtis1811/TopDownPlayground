@@ -27,12 +27,14 @@ namespace StateMachine.States
 
         public override void EnterState()
         {
-            _context.animatable.animator.Play(_attackData.animation.name);
             timer = 0;
+            _context.animatable.animator.Play(_attackData.animation.name);
+            
             _hitboxHandler = new HitboxHandler();
             _hitboxHandler.CreateHitbox(_attackData.hitHitbox[0].position, 
                 _attackData.hitHitbox[0].size, _attackData.damage, hitbox);
             _hitboxHandler.ActivateHitbox();
+            
             canTransition = false;
             Debug.Log(_attackData.animation.length);
             // just for testing when we enter the state we will create a hitbox and 
