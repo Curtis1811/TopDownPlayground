@@ -65,11 +65,7 @@ public class Player : MonoBehaviour, IMoveable, IDamageable, IAnimatable
         _playerController.OnMediumAttackAction += (index) => RequestAttackData(index);
         _playerController.OnHeavyAttackAction += (index) => RequestAttackData(index);
     }
-
-    private void Update()
-    {
-    }
-
+    
     private void FixedUpdate()
     {
         if (cameraController != null)

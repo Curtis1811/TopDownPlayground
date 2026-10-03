@@ -15,9 +15,9 @@ MonoBehaviour:
   damage: 0
   hitStun: 0
   blockStun: 0
-  animation: {fileID: 7400000, guid: 96d0dd08310d3a540a08c4cb2f479ff3, type: 2}
   hitHitbox:
   - startFrame: 0
     endFrame: 0
-    position: {x: 0, y: 0}
-    size: {x: 0, y: 0}
+    position: {x: 0.09, y: 0}
+    size: {x: 0.24, y: 0.12}
+  animation: {fileID: 7400000, guid: 96d0dd08310d3a540a08c4cb2f479ff3, type: 2}

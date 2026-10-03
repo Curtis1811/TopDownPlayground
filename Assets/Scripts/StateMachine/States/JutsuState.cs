@@ -18,6 +18,8 @@ public class JutsuState : BaseState
 
     public float _timer;
 
+    private int _currentFrame;
+    
     /// <summary>
     /// We need some kind of frame data System here to handle the jutsu execution and update and exiting.
     /// </summary>
@@ -48,15 +50,22 @@ public class JutsuState : BaseState
         _jutsu = _jutsuData.CreateJutsu();
         _jutsu.StartJutsu(_context);
         canTransition = false;
-        //_context.CharacterContext.animatable.animator.SetTrigger("JutsuStart");
     }
 
     public override void FixedUpdateState()
     {
         // Here we want to update our animation list and check if we are at the end of the animation and then exit the state.
         _timer += Time.deltaTime;
+        
+        if (_currentAnimation != null)
+        {
+            _currentFrame = Mathf.FloorToInt(_timer * _currentAnimation.frameRate);
 
-        Debug.Log($"Animation Queue Count: {_animationQueue.Count}");
+            Debug.Log($"FrameRate: {_currentAnimation.length * _currentAnimation.frameRate}" + $"Animation Queue Count: {_animationQueue.Count}");
+            Debug.Log($"Current Frame: {_currentFrame} / {_currentAnimation.length * _currentAnimation.frameRate}");
+        }
+
+        //Debug.Log($"Animation Queue Count: {_animationQueue.Count}");
         if (!hasPlayedFirstAnim)
         {
             PlayAnimation();

@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1e4071c677410b9b77755694ae2936, type: 3}
   m_Name: Chidori
   m_EditorClassIdentifier: Assembly-CSharp::GenericJutsuData
-  JutsuName: Chidori
-  JutsuDamage: 0
+  damage: 0
+  hitStun: 0
+  blockStun: 0
+  hitHitbox: []
+  jutsuName: New Jutsu
   animationList:
   - {fileID: 7400000, guid: 1406d4d96baf3c94e8f6b15aa15a149e, type: 2}
   - {fileID: 7400000, guid: 9d4b24477bb41b548995e48489bc6705, type: 2}
